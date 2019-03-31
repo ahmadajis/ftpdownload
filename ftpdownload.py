@@ -16,7 +16,7 @@ start = datetime.now()
 files = ftp.nlst()
 for file in files:
 	print("Downloading..." + file)
-	ftp.retrbinary("RETR " + file ,open("/var/www/html/Python/ftp/" + file, 'wb').write)
+	ftp.retrbinary("RETR " + file ,open("/yourdirectori/file" + file, 'wb').write)
 
 ftp.close()
 
